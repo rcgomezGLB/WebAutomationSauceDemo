@@ -24,7 +24,7 @@ public class LoginPage extends  BasePage {
     }
 
     public void typePassword(String password) {
-        userNameInput.sendKeys(password);
+        passwordInput.sendKeys(password);
     }
 
     public void login(String user, String password) {
