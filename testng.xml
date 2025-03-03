@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="My Suite" verbose="1">
+<suite name="Sauce Demo Testing Suite" verbose="1">
     <parameter name="baseUrl" value="https://www.saucedemo.com/"/>
-    <test name="Nopackage">
+    <test name="Sample Test">
         <classes>
             <class name="com.rcgomez.tests.SampleTest"/>
         </classes>

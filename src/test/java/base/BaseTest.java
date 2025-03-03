@@ -1,6 +1,5 @@
 package base;
 
-import com.rcgomez.pages.BasePage;
 import com.rcgomez.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +9,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseTest {
     private WebDriver driver;
-    private LoginPage loginPage;
+    protected LoginPage loginPage;
 
 
     @Parameters({"baseUrl"})
