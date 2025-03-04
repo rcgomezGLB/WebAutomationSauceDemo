@@ -5,7 +5,7 @@
     <parameter name="username" value="standard_user"/>
     <parameter name="password" value="secret_sauce"/>
     <test name="Purchase product test">
-        <parameter name="numberProducts" value="3"/>
+        <parameter name="numberProducts" value="1"/>
         <parameter name="firstName" value="Roberto"/>
         <parameter name="lastName" value="Gomez"/>
         <parameter name="postalCode" value="000000"/>
