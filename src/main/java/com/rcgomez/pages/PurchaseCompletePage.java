@@ -4,12 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CheckoutCompletePage extends BasePage {
+public class PurchaseCompletePage extends BasePage {
 
     @FindBy(css = ".complete-header")
     WebElement orderConfirmationHeader;
 
-    public CheckoutCompletePage(WebDriver driver) {
+    public PurchaseCompletePage(WebDriver driver) {
         super(driver);
     }
 

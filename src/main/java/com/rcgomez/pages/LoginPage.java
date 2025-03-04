@@ -32,4 +32,9 @@ public class LoginPage extends  BasePage {
         typePassword(password);
         loginButton.click();
     }
+
+    public WebElement getLoginButton() {
+        return loginButton;
+    }
+
 }

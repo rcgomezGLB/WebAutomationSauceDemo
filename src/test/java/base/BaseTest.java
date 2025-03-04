@@ -1,7 +1,5 @@
 package base;
 
-import com.rcgomez.pages.InventoryPage;
-import com.rcgomez.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
