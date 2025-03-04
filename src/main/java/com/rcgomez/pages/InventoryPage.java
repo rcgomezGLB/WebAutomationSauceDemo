@@ -4,14 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 public class InventoryPage extends BasePage {
 
-    private static final Logger log = LoggerFactory.getLogger(InventoryPage.class);
     @FindAll({@FindBy(css = ".btn_inventory")})
     List<WebElement> buttonsList;
 
