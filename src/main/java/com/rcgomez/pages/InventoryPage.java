@@ -29,10 +29,6 @@ public class InventoryPage extends BasePage {
         return buttonsList;
     }
 
-    public void clickElement(WebElement element) {
-        element.click();
-    }
-
     public void goToShoppingCart() {
         clickElement(shoppingCartButton);
     }
