@@ -2,6 +2,8 @@
 
 <suite name="Sauce Demo Testing Suite" verbose="1">
     <parameter name="baseUrl" value="https://www.saucedemo.com/"/>
+    <parameter name="username" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
     <test name="Sample Test">
         <classes>
             <class name="com.rcgomez.tests.SampleTest"/>
