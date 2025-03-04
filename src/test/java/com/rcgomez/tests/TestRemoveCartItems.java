@@ -39,7 +39,7 @@ public class TestRemoveCartItems extends LoggedInBaseTest {
             cartPage.clickElement(button);
         }
 
-        // Get if remove buttons are remaining
+        // Assert if remove buttons are remaining
         Assert.assertTrue(cartPage.getRemoveItemButtons().isEmpty());
 
     }
