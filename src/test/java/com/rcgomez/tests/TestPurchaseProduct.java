@@ -28,7 +28,7 @@ public class TestPurchaseProduct extends LoggedInBaseTest {
 
    @Parameters({"numberProducts", "firstName", "lastName", "postalCode"})
    @Test
-   public void purchaseProduct(int numberProducts, String firstName, String lastName, String postalCode) throws Exception {
+   public void purchaseProduct(int numberProducts, String firstName, String lastName, String postalCode) {
       List<WebElement> addProductButtonList = inventoryPage.getButtonsList();
       List<WebElement> selectedProductList = RandomSelectionUtil.randomSelect(addProductButtonList, numberProducts);
 

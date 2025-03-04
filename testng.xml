@@ -13,4 +13,10 @@
             <class name="com.rcgomez.tests.TestPurchaseProduct"/>
         </classes>
     </test>
+    <test name="Remove elements from cart">
+        <parameter name="numberProducts" value="3"/>
+        <classes>
+            <class name="com.rcgomez.tests.TestRemoveCartItems"/>
+        </classes>
+    </test>
 </suite>
