@@ -47,7 +47,7 @@ public class TestPurchaseProduct extends LoggedInBaseTest {
 
       overviewPage.finishCheckout();
 
-      Assert.assertNotNull(purchaseCompletePage.getOrderConfirmationHeader());
+      Assert.assertTrue(purchaseCompletePage.getOrderConfirmationHeader().isDisplayed());
 
    }
 }
