@@ -19,4 +19,9 @@
             <class name="com.rcgomez.tests.TestRemoveCartItems"/>
         </classes>
     </test>
+    <test name="Log out functionality">
+        <classes>
+            <class name="com.rcgomez.tests.TestLogout"/>
+        </classes>
+    </test>
 </suite>
