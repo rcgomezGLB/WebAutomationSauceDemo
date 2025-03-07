@@ -30,8 +30,11 @@ public class TestPurchaseProduct extends LoggedInBaseTest {
    @Test
    public void purchaseProduct(int numberProducts, String firstName, String lastName, String postalCode) {
       List<WebElement> addProductButtonList = inventoryPage.getButtonsList();
+
+      // Select randomly n buttons from addProductButtonList
       List<WebElement> selectedProductList = RandomSelectionUtil.randomSelect(addProductButtonList, numberProducts);
 
+      // Click the selected buttons
       for (WebElement element: selectedProductList) {
          inventoryPage.clickElement(element);
       }
@@ -40,6 +43,7 @@ public class TestPurchaseProduct extends LoggedInBaseTest {
 
       cartPage.goToCheckout();
 
+      // Checkout information
       checkoutPage.typeFirstName(firstName);
       checkoutPage.typeLastName(lastName);
       checkoutPage.typePostalCode(postalCode);

@@ -26,6 +26,8 @@ public class TestRemoveCartItems extends LoggedInBaseTest {
     @Test
     void removeCartItems(int numberProducts) {
         List<WebElement> addProductButtonList = inventoryPage.getButtonsList();
+
+        // Select randomly remove buttons from addProductButtonList
         List<WebElement> selectedProductList = RandomSelectionUtil.randomSelect(addProductButtonList, numberProducts);
 
         for (WebElement button: selectedProductList) {
@@ -35,11 +37,12 @@ public class TestRemoveCartItems extends LoggedInBaseTest {
         inventoryPage.goToShoppingCart();
 
         List<WebElement> removeButtonsList = cartPage.getRemoveItemButtons();
+        // Remove all products
         for (WebElement button: removeButtonsList) {
             cartPage.clickElement(button);
         }
 
-        // Assert if remove buttons are remaining
+        // Assert empty cart
         Assert.assertTrue(cartPage.getRemoveItemButtons().isEmpty());
 
     }

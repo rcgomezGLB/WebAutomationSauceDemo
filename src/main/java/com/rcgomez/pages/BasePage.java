@@ -38,7 +38,7 @@ public abstract class BasePage {
 
         Wait<WebDriver> wait;
         wait = new WebDriverWait(driver, Duration.ofSeconds(4));
-        wait.until((d) -> logoutButton.isDisplayed());
+        wait.until((d) -> logoutButton.isDisplayed()); // To ensure animation of side menu is completed
 
         clickElement(logoutButton);
     }
