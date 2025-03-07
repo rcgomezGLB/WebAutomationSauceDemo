@@ -18,6 +18,9 @@ public abstract class BasePage {
     @FindBy(id = "logout_sidebar_link")
     WebElement logoutButton;
 
+    @FindBy(id = "react-burger-cross-btn")
+    WebElement getBurgerMenuCrossButton;
+
 
     public BasePage(WebDriver driver) {
         PageFactory.initElements(driver,this);
@@ -28,7 +31,9 @@ public abstract class BasePage {
     }
 
     public void logOut(WebDriver driver) {
-        driver.navigate().refresh(); // Reloads the page to reset its state and ensure sideMenuDiv is not visible initially.
+        if (getBurgerMenuCrossButton.isDisplayed()) { // Side menu could be displayed
+            clickElement(getBurgerMenuCrossButton);
+        }
         clickElement(burgerMenuButton);
 
         Wait<WebDriver> wait;
