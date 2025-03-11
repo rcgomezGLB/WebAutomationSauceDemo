@@ -17,7 +17,7 @@ public class TestPurchaseProduct extends LoggedInBaseTest {
    private OverviewPage overviewPage;
    private PurchaseCompletePage purchaseCompletePage;
 
-   @BeforeClass
+   @BeforeMethod
    void classSetUp() {
       inventoryPage = new InventoryPage(driver);
       cartPage = new CartPage(driver);

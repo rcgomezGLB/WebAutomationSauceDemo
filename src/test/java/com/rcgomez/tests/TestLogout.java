@@ -4,14 +4,14 @@ import base.LoggedInBaseTest;
 import com.rcgomez.pages.InventoryPage;
 import com.rcgomez.pages.LoginPage;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestLogout extends LoggedInBaseTest {
     private InventoryPage inventoryPage;
     private LoginPage loginPage;
 
-    @BeforeClass
+    @BeforeMethod
     private void classSetUp() {
         inventoryPage = new InventoryPage(driver);
         loginPage= new LoginPage(driver);

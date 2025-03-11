@@ -6,7 +6,7 @@ import com.rcgomez.pages.InventoryPage;
 import com.rcgomez.util.RandomSelectionUtil;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -16,7 +16,7 @@ public class TestRemoveCartItems extends LoggedInBaseTest {
     private InventoryPage inventoryPage;
     private CartPage cartPage;
 
-    @BeforeClass
+    @BeforeMethod
     private void classSetUp() {
         inventoryPage = new InventoryPage(driver);
         cartPage = new CartPage(driver);

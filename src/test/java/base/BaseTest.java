@@ -2,22 +2,20 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 public class BaseTest {
     protected WebDriver driver;
 
     @Parameters({"baseUrl"})
-    @BeforeClass
+    @BeforeMethod
     public void setUp(String baseUrl) {
         driver = new ChromeDriver();
         driver.get(baseUrl);
     }
 
-    @AfterClass
-    public void EndTests() {
+    @AfterMethod
+    public void tearDown() {
         if (driver != null) {
             driver.quit();
         }
